@@ -5,10 +5,10 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 
-import { Request, ResponseObject, Plugin, ResponseToolkit } from 'hapi';
+import { Request, ResponseObject, Plugin, ResponseToolkit } from '@hapi/hapi';
 import { VerifyOptions } from 'jsonwebtoken';
 
-declare module 'hapi' {
+declare module '@hapi/hapi' {
     interface ServerAuth {
         strategy(name: string, scheme: 'jwt', options?: hapiAuthJwt2.Options): void;
     }
